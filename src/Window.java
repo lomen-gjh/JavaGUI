@@ -63,8 +63,8 @@ public class Window extends JFrame implements ActionListener {
     }
 
     public void draw(Graphics g){
-       for (int i=0; i<10;i++){
-           g.drawRect(i*50,50,50,50);
+       for (int i=0; i<5;i++){
+           g.drawOval(i*10,i*10,100-i*20,100-i*20);
        }
     }
 
