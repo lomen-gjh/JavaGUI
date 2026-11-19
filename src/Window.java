@@ -63,8 +63,9 @@ public class Window extends JFrame implements ActionListener {
     }
 
     public void draw(Graphics g){
-        g.drawRect(50,50,100,100);
-        g.drawOval(50,50,100,100);
+       for (int i=0; i<10;i++){
+           g.drawRect(i*50,50,50,50);
+       }
     }
 
     public char getFirstLetter(String s){
