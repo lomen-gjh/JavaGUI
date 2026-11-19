@@ -56,10 +56,15 @@ public class Window extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        count++;
-        System.out.println("Entry number: "+count);
-        System.out.println("Hello, "+entry.getText());
-        System.out.println(getFirstLetter(entry.getText()));
+        if (e.getSource()==hello){ //check if hello button was clicked
+            draw(center.getGraphics());
+        }
+
+    }
+
+    public void draw(Graphics g){
+        g.drawRect(50,50,100,100);
+        g.drawOval(50,50,100,100);
     }
 
     public char getFirstLetter(String s){
